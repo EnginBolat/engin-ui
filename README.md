@@ -10,7 +10,6 @@ npm install engin-ui
 
 ## Usage
 
-
 ```js
 import { multiply } from 'engin-ui';
 
@@ -18,7 +17,6 @@ import { multiply } from 'engin-ui';
 
 const result = await multiply(3, 7);
 ```
-
 
 ## Contributing
 
