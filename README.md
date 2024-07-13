@@ -11,16 +11,25 @@ npm install engin-ui
 ## Usage
 
 ```js
-import { multiply } from 'engin-ui';
+import { Button, TextInput } from 'engin-ui';
 
 // ...
+      <TextInput
+        value="value"
+        onChangeText={(text) => {}}
+        maxLength={200}
+        multiline={true}
+        showMaxLengthTextAlign="right"
+      />
 
-const result = await multiply(3, 7);
+      <Button
+        onPress={() => {}}
+        title="Button"
+        width="full"
+        disabled={false}
+        isHaveShadow={false}
+      />
 ```
-
-## Contributing
-
-See the [contributing guide](CONTRIBUTING.md) to learn how to contribute to the repository and the development workflow.
 
 ## License
 
