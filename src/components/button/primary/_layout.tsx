@@ -1,16 +1,16 @@
 import React, { useEffect, useState } from 'react';
 import {
-  TouchableOpacity,
-  Text,
   StyleSheet,
+  Text,
+  TouchableOpacity,
+  type DimensionValue,
   type GestureResponderEvent,
   type LayoutChangeEvent,
-  type TargetedEvent,
   type NativeSyntheticEvent,
-  type DimensionValue,
+  type TargetedEvent,
 } from 'react-native';
 
-interface IPrimaryButton {
+interface IButton {
   id?: string;
   title: string;
   disabled?: boolean;
@@ -25,7 +25,7 @@ interface IPrimaryButton {
   onFocus?: (e: NativeSyntheticEvent<TargetedEvent>) => void;
 }
 
-const PrimaryButton: React.FC<IPrimaryButton> = ({
+const Button: React.FC<IButton> = ({
   id,
   title,
   disabled = false,
@@ -87,7 +87,7 @@ const PrimaryButton: React.FC<IPrimaryButton> = ({
   );
 };
 
-export default PrimaryButton;
+export default Button;
 
 interface StyleProps {
   disabled?: boolean;
