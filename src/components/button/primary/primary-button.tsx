@@ -1,31 +1,101 @@
-import React from 'react';
-import { TouchableOpacity, Text, StyleSheet } from 'react-native';
+import React, { useEffect, useState } from 'react';
+import {
+  TouchableOpacity,
+  Text,
+  StyleSheet,
+  type GestureResponderEvent,
+  type LayoutChangeEvent,
+  type TargetedEvent,
+  type NativeSyntheticEvent,
+  type DimensionValue,
+} from 'react-native';
 
 interface IPrimaryButton {
-  onPress: () => void;
+  id?: string;
   title: string;
   disabled?: boolean;
+  isHaveShadow?: boolean;
+  width: 'full' | 'half' | 'querter';
+  onPress: (event: GestureResponderEvent) => void;
+  onLayout?: (event: LayoutChangeEvent) => void;
+  onLongPress?: (event: GestureResponderEvent) => void;
+  onPressIn?: (event: GestureResponderEvent) => void;
+  onPressOut?: (event: GestureResponderEvent) => void;
+  onBlur?: (e: NativeSyntheticEvent<TargetedEvent>) => void;
+  onFocus?: (e: NativeSyntheticEvent<TargetedEvent>) => void;
 }
 
 const PrimaryButton: React.FC<IPrimaryButton> = ({
-  onPress,
+  id,
   title,
   disabled = false,
+  isHaveShadow = true,
+  width = 'full',
+  onPress,
+  onLayout,
+  onLongPress,
+  onPressIn,
+  onPressOut,
+  onBlur,
+  onFocus,
 }) => {
+  const [buttonWidth, setButtonWidth] = useState<DimensionValue>();
+
+  useEffect(() => {
+    setupButtonWidth();
+  });
+
+  const setupButtonWidth = () => {
+    let bw = '';
+    switch (width) {
+      case 'full':
+        bw = '100%';
+        break;
+      case 'half':
+        bw = '50%';
+        break;
+      case 'querter':
+        bw = '25%';
+        break;
+      default:
+        break;
+    }
+    setButtonWidth(bw as DimensionValue);
+  };
+
   return (
     <TouchableOpacity
-      onPress={onPress}
+      id={id}
       disabled={disabled}
-      style={styles(disabled).button}
+      style={
+        styles({
+          disabled: disabled,
+          isHaveShadow: isHaveShadow,
+          width: buttonWidth,
+        }).button
+      }
+      onPress={onPress}
+      onLayout={onLayout}
+      onLongPress={onLongPress}
+      onPressIn={onPressIn}
+      onPressOut={onPressOut}
+      onBlur={onBlur}
+      onFocus={onFocus}
     >
-      <Text style={styles().text}>{title}</Text>
+      <Text style={styles({ disabled: disabled }).text}>{title}</Text>
     </TouchableOpacity>
   );
 };
 
 export default PrimaryButton;
 
-const styles = (disabled?: boolean) => {
+interface StyleProps {
+  disabled?: boolean;
+  isHaveShadow?: boolean;
+  width?: DimensionValue;
+}
+
+const styles = (props: Readonly<StyleProps>) => {
   return StyleSheet.create({
     button: {
       paddingVertical: 16,
@@ -33,10 +103,15 @@ const styles = (disabled?: boolean) => {
       borderRadius: 12,
       justifyContent: 'center',
       alignItems: 'center',
-      backgroundColor: disabled ? 'black' : 'grey',
+      backgroundColor: props.disabled ? 'grey' : 'black',
+      width: props.width,
+      shadowColor: 'black',
+      shadowOffset: { width: 0, height: 1 },
+      shadowOpacity: props.isHaveShadow ? 1 : 0,
     },
     text: {
       fontWeight: '500',
+      color: 'white',
     },
   });
 };
