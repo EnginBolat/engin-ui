@@ -1,0 +1,22 @@
+import Svg, { Path } from 'react-native-svg';
+import IconType from './IconType';
+
+const ArrowDownIcon = ({ width, height, color }: IconType) => (
+  <Svg
+    width={width ?? '24'}
+    height={height ?? '24'}
+    viewBox="0 0 24 24"
+    fill="none"
+  >
+    <Path
+      d="M19.9201 8.94922L13.4001 15.4692C12.6301 16.2392 11.3701 16.2392 10.6001 15.4692L4.08008 8.94922"
+      stroke={color ?? '#292D32'}
+      strokeWidth="1.5"
+      strokeMiterlimit="10"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  </Svg>
+);
+
+export default ArrowDownIcon;

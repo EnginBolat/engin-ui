@@ -1,28 +1,34 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- */
+import { StyleSheet, Text, View } from 'react-native';
+import { Button } from './src/components/Button/Button';
 
-import { NewAppScreen } from '@react-native/new-app-screen';
-import { StatusBar, StyleSheet, useColorScheme, View } from 'react-native';
+console.log(`STORYBOOK_ENABLED: ${process.env.STORYBOOK_ENABLED}`);
 
-function App() {
-  const isDarkMode = useColorScheme() === 'dark';
+const App = () => (
+  <View style={styles.container}>
+    <Text>{process.env.STORYBOOK_ENABLED ? 'Storybook' : 'Normal'} Start</Text>
+    <Button
+      title="Click Me"
+      onPress={() => console.log('Button Pressed!')}
+      variant='primary'
+    />
+  </View>
+);
 
-  return (
-    <View style={styles.container}>
-      <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
-      <NewAppScreen templateFileName="App.tsx" />
-    </View>
-  );
+let AppEntryPoint = App;
+
+if (process.env.STORYBOOK_ENABLED === 'true') {
+  AppEntryPoint = require('./.rnstorybook').default;
 }
+
+export default AppEntryPoint;
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
+    padding: 20,
+    gap: 12,
   },
 });
-
-export default App;

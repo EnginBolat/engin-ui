@@ -1,4 +1,7 @@
 const { getDefaultConfig, mergeConfig } = require('@react-native/metro-config');
+const path = require('path');
+const withStorybook = require('@storybook/react-native/metro/withStorybook');
+const defaultConfig = getDefaultConfig(__dirname);
 
 /**
  * Metro configuration
@@ -7,5 +10,20 @@ const { getDefaultConfig, mergeConfig } = require('@react-native/metro-config');
  * @type {import('@react-native/metro-config').MetroConfig}
  */
 const config = {};
+const finalConfig = mergeConfig(getDefaultConfig(__dirname), config);
 
-module.exports = mergeConfig(getDefaultConfig(__dirname), config);
+module.exports = withStorybook(finalConfig, {
+  // Set to false to remove storybook specific options
+  // you can also use a env variable to set this
+  enabled: true,
+  // Path to your storybook config
+  configPath: path.resolve(__dirname, './.rnstorybook'),
+  // note that this is the default so you can the config path blank if you use .rnstorybook
+
+  // Optional websockets configuration
+  // Starts a websocket server on the specified port and host on metro start
+  // websockets: {
+  //   port: 7007,
+  //   host: 'localhost',
+  // },
+});
