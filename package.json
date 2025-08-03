@@ -12,7 +12,13 @@
     "storybook-metro": "react-native start --config ./.rnstorybook/metro.storybook.js",
     "storybook": "STORYBOOK_ENABLED='true' react-native start",
     "storybook:android": "STORYBOOK_ENABLED='true' react-native run-android",
-    "storybook:ios": "STORYBOOK_ENABLED='true' react-native run-ios"
+    "storybook:ios": "STORYBOOK_ENABLED='true' react-native run-ios",
+    "setup": "cd scripts && sh setup.sh",
+    "docker:up": "docker compose up",
+    "docker:build": "docker compose build",
+    "docker:down": "docker compose down",
+    "test:docker": "docker compose run --rm react-native yarn test",
+    "lint:docker": "docker compose run --rm react-native yarn lint"
   },
   "dependencies": {
     "babel-plugin-transform-inline-environment-variables": "^0.4.4",

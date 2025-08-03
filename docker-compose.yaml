@@ -1,0 +1,15 @@
+version: "3.8"
+
+services:
+  react-native:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: rn-dev
+    ports:
+      - "8081:8081" # Metro bundler
+    volumes:
+      - .:/app
+    stdin_open: true
+    tty: true
+    command: yarn start

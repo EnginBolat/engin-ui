@@ -8,9 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		0C650D60F5E7436D8D3C174F /* Euclid-Circular-A-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ECA9379B0FAF475F978A2ABE /* Euclid-Circular-A-Regular.ttf */; };
-		0C80B921A6F3F58F76C31292 /* libPods-AwesomeAppByEngin.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-AwesomeAppByEngin.a */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		46B35E6CE80B42488A55E12F /* Euclid-Circular-A-Medium-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F09744B86CFC4F7DA467D62D /* Euclid-Circular-A-Medium-Italic.ttf */; };
+		4773406932DEF57E82159214 /* libPods-AwesomeAppByEngin.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A9C442AB00ABC3DB30CE2D9 /* libPods-AwesomeAppByEngin.a */; };
 		6A4507F8E7E14F97914D73E5 /* Euclid-Circular-A-Light-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 129DABC97E0041B7A0974F83 /* Euclid-Circular-A-Light-Italic.ttf */; };
 		761780ED2CA45674006654EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761780EC2CA45674006654EE /* AppDelegate.swift */; };
 		77C8950E98A44EDDB614F79B /* Euclid-Circular-A-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4553700C4FE84E1385789AEC /* Euclid-Circular-A-SemiBold.ttf */; };
@@ -31,20 +31,20 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = AwesomeAppByEngin/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = AwesomeAppByEngin/Info.plist; sourceTree = "<group>"; };
 		13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PrivacyInfo.xcprivacy; path = AwesomeAppByEngin/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
-		3B4392A12AC88292D35C810B /* Pods-AwesomeAppByEngin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AwesomeAppByEngin.debug.xcconfig"; path = "Target Support Files/Pods-AwesomeAppByEngin/Pods-AwesomeAppByEngin.debug.xcconfig"; sourceTree = "<group>"; };
 		4553700C4FE84E1385789AEC /* Euclid-Circular-A-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Euclid-Circular-A-SemiBold.ttf"; path = "../src/assets/fonts/Euclid-Circular-A-SemiBold.ttf"; sourceTree = "<group>"; };
-		5709B34CF0A7D63546082F79 /* Pods-AwesomeAppByEngin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AwesomeAppByEngin.release.xcconfig"; path = "Target Support Files/Pods-AwesomeAppByEngin/Pods-AwesomeAppByEngin.release.xcconfig"; sourceTree = "<group>"; };
-		5DCACB8F33CDC322A6C60F78 /* libPods-AwesomeAppByEngin.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AwesomeAppByEngin.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		761780EC2CA45674006654EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = AwesomeAppByEngin/AppDelegate.swift; sourceTree = "<group>"; };
+		7BB553B3ACDDF12096669F83 /* Pods-AwesomeAppByEngin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AwesomeAppByEngin.debug.xcconfig"; path = "Target Support Files/Pods-AwesomeAppByEngin/Pods-AwesomeAppByEngin.debug.xcconfig"; sourceTree = "<group>"; };
 		7BE023F47C3D4BE7A50EB776 /* Euclid-Circular-A-SemiBold-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Euclid-Circular-A-SemiBold-Italic.ttf"; path = "../src/assets/fonts/Euclid-Circular-A-SemiBold-Italic.ttf"; sourceTree = "<group>"; };
 		807ACEC5D7F94A65B7A84905 /* Euclid-Circular-A-Bold-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Euclid-Circular-A-Bold-Italic.ttf"; path = "../src/assets/fonts/Euclid-Circular-A-Bold-Italic.ttf"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = AwesomeAppByEngin/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		836D99E00CFC43409BAF5EE0 /* Euclid-Circular-A-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Euclid-Circular-A-Light.ttf"; path = "../src/assets/fonts/Euclid-Circular-A-Light.ttf"; sourceTree = "<group>"; };
+		9A9C442AB00ABC3DB30CE2D9 /* libPods-AwesomeAppByEngin.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AwesomeAppByEngin.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C75F588FDCDF4DE6B95DC5B2 /* Euclid-Circular-A-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Euclid-Circular-A-Medium.ttf"; path = "../src/assets/fonts/Euclid-Circular-A-Medium.ttf"; sourceTree = "<group>"; };
 		ECA9379B0FAF475F978A2ABE /* Euclid-Circular-A-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Euclid-Circular-A-Regular.ttf"; path = "../src/assets/fonts/Euclid-Circular-A-Regular.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		F09744B86CFC4F7DA467D62D /* Euclid-Circular-A-Medium-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Euclid-Circular-A-Medium-Italic.ttf"; path = "../src/assets/fonts/Euclid-Circular-A-Medium-Italic.ttf"; sourceTree = "<group>"; };
 		F609ACAC524849E5BB142370 /* Euclid-Circular-A-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Euclid-Circular-A-Bold.ttf"; path = "../src/assets/fonts/Euclid-Circular-A-Bold.ttf"; sourceTree = "<group>"; };
+		FDDA65E004E2DD335CBDDE91 /* Pods-AwesomeAppByEngin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AwesomeAppByEngin.release.xcconfig"; path = "Target Support Files/Pods-AwesomeAppByEngin/Pods-AwesomeAppByEngin.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C80B921A6F3F58F76C31292 /* libPods-AwesomeAppByEngin.a in Frameworks */,
+				4773406932DEF57E82159214 /* libPods-AwesomeAppByEngin.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,7 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				5DCACB8F33CDC322A6C60F78 /* libPods-AwesomeAppByEngin.a */,
+				9A9C442AB00ABC3DB30CE2D9 /* libPods-AwesomeAppByEngin.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -131,8 +131,8 @@
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				3B4392A12AC88292D35C810B /* Pods-AwesomeAppByEngin.debug.xcconfig */,
-				5709B34CF0A7D63546082F79 /* Pods-AwesomeAppByEngin.release.xcconfig */,
+				7BB553B3ACDDF12096669F83 /* Pods-AwesomeAppByEngin.debug.xcconfig */,
+				FDDA65E004E2DD335CBDDE91 /* Pods-AwesomeAppByEngin.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -144,13 +144,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "AwesomeAppByEngin" */;
 			buildPhases = (
-				C38B50BA6285516D6DCD4F65 /* [CP] Check Pods Manifest.lock */,
+				74BBA3C0D5EBD331BF1718A9 /* [CP] Check Pods Manifest.lock */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */,
-				E235C05ADACE081382539298 /* [CP] Copy Pods Resources */,
+				FD4B15F7EB98E0C8BE00B186 /* [CP] Embed Pods Frameworks */,
+				05F2C58AC632ECD1CD007E2A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -232,24 +232,24 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nWITH_ENVIRONMENT=\"$REACT_NATIVE_PATH/scripts/xcode/with-environment.sh\"\nREACT_NATIVE_XCODE=\"$REACT_NATIVE_PATH/scripts/react-native-xcode.sh\"\n\n/bin/sh -c \"$WITH_ENVIRONMENT $REACT_NATIVE_XCODE\"\n";
 		};
-		00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */ = {
+		05F2C58AC632ECD1CD007E2A /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AwesomeAppByEngin/Pods-AwesomeAppByEngin-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-AwesomeAppByEngin/Pods-AwesomeAppByEngin-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			name = "[CP] Embed Pods Frameworks";
+			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AwesomeAppByEngin/Pods-AwesomeAppByEngin-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-AwesomeAppByEngin/Pods-AwesomeAppByEngin-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AwesomeAppByEngin/Pods-AwesomeAppByEngin-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AwesomeAppByEngin/Pods-AwesomeAppByEngin-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C38B50BA6285516D6DCD4F65 /* [CP] Check Pods Manifest.lock */ = {
+		74BBA3C0D5EBD331BF1718A9 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -271,21 +271,21 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E235C05ADACE081382539298 /* [CP] Copy Pods Resources */ = {
+		FD4B15F7EB98E0C8BE00B186 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AwesomeAppByEngin/Pods-AwesomeAppByEngin-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-AwesomeAppByEngin/Pods-AwesomeAppByEngin-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			name = "[CP] Copy Pods Resources";
+			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AwesomeAppByEngin/Pods-AwesomeAppByEngin-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-AwesomeAppByEngin/Pods-AwesomeAppByEngin-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AwesomeAppByEngin/Pods-AwesomeAppByEngin-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AwesomeAppByEngin/Pods-AwesomeAppByEngin-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -304,7 +304,7 @@
 /* Begin XCBuildConfiguration section */
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3B4392A12AC88292D35C810B /* Pods-AwesomeAppByEngin.debug.xcconfig */;
+			baseConfigurationReference = 7BB553B3ACDDF12096669F83 /* Pods-AwesomeAppByEngin.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -332,7 +332,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5709B34CF0A7D63546082F79 /* Pods-AwesomeAppByEngin.release.xcconfig */;
+			baseConfigurationReference = FDDA65E004E2DD335CBDDE91 /* Pods-AwesomeAppByEngin.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
